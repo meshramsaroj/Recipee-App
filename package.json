@@ -1,6 +1,6 @@
 {
   "name": "RecipeApp",
-  "homepage": "https://github.com/meshramsaroj.github.io/RecipeApp/build",
+  "homepage": "https://github.com/meshramsaroj.github.io/RecipeApp",
   "version": "1.0.0",
   "description": "Describe BasicReactApp here",
   "private": true,
@@ -12,7 +12,7 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^16.8.6",
