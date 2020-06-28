@@ -1,5 +1,4 @@
 import "./App.css";
-import "./createReciepeApp/recipe-module.css";
 
 import React, { useEffect, useState } from "react";
 import Recipe from "./createReciepeApp/Recipe";
@@ -33,31 +32,35 @@ const App = () => {
   };
   return (
     <div className="App">
-      <div>
-        <form onSubmit={getSearch} className="search-form">
+      <div className="d-flex justify-content-center mb-4 p-3">
+        <form onSubmit={getSearch} className="form-inline my-2 my-lg-0">
           <input
             placeholder="Enter Recipee Name"
-            className="search-bar"
+            className="form-control"
             type=" text"
             value={search}
             onChange={updateSeacrh}
           />
-          <button className="search-btn" type="submit">
+          <button className="btn my-2 my-sm-0" type="submit">
             search
           </button>
         </form>
       </div>
 
-      <div className="recipes">
-        {recipes.map(recipeList => (
-          <Recipe
-            key={recipeList.recipe.label}
-            title={recipeList.recipe.label}
-            calories={recipeList.recipe.calories}
-            image={recipeList.recipe.image}
-            ingredient={recipeList.recipe.ingredients}
-          />
-        ))}
+      <div className="">
+        <div className="row">
+          {recipes.map((recipeItem,index)=> (
+            <div className="col-md-6 col-lg-6 col-sm-12">
+            <Recipe
+              key={index}
+              title={recipeItem.recipe.label}
+              calories={recipeItem.recipe.calories}
+              image={recipeItem.recipe.image}
+              ingredient={recipeItem.recipe.ingredients}
+            />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

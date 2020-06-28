@@ -4,37 +4,9 @@
   min-height: 100ch;
 }
 
-.search-form{
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  min-height: 10vh;
-
+.card-header, .btn {
+  background-color: #f38863;
 }
 
-.search-form .search-bar{
-  border: none;
-  height: 15px;
-  padding:10px;
-  width:100;
-  margin-right: 5px;
-}
 
-.search-btn{
-  background: lightcoral;
-  border:none;
-  border-radius: 2px;
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 10px;
-  text-transform: uppercase;
-}
-.recipes{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 40px;
-}
 

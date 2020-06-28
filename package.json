@@ -1,9 +1,9 @@
 {
   "name": "RecipeApp",
-  "homepage": "https://github.com/meshramsaroj.github.io/RecipeApp",
   "version": "1.0.0",
   "description": "Describe BasicReactApp here",
   "private": true,
+  "homepage": "https://github.com/meshramsaroj.github.io/Recipee-app",
   "scripts": {
     "build": "nwb build-react-app",
     "clean": "nwb clean-app",
